@@ -1,0 +1,39 @@
+.bodyindex{
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template: 
+    "cc cc cc"
+    "bb aa aa"
+    "dd dd dd";
+    grid-template-columns: 100px auto auto;
+    grid-template-rows: auto auto auto;
+    background-color: rgb(7, 7, 39);
+  }
+  
+  
+  .grid_header{
+    grid-area: cc;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #221d47;
+    border-radius: 30px;
+    box-shadow: inset 5px 5px 10px #657399, inset -5px -5px 10px #241a42;
+    transition: all 1s ease-in-out;
+  
+  }
+  
+  .grid_aside{
+    grid-area: bb;
+  }
+  
+  .grid_main{
+    grid-area: aa;
+  }
+  
+  .grid_footer{
+    grid-area: dd;
+  }
+  
+  .grid_aside, .grid_footer, .grid_header, .grid_main{
+    background-color: rgb(48, 131, 204);
+  }
